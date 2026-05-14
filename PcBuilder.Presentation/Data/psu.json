@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Corsair RM1000x (2021)",
+    "price": 189.99,
+    "wattage": 1000,
+    "efficiency_rating": "80+ Gold",
+    "form_factor": "ATX",
+    "modular": "Full"
+  },
+  {
+    "name": "Corsair RM850x (2021)",
+    "price": 149.99,
+    "wattage": 850,
+    "efficiency_rating": "80+ Gold",
+    "form_factor": "ATX",
+    "modular": "Full"
+  },
+  {
+    "name": "EVGA SuperNOVA 850G XC",
+    "price": 129.99,
+    "wattage": 850,
+    "efficiency_rating": "80+ Gold",
+    "form_factor": "ATX",
+    "modular": "Full"
+  },
+  {
+    "name": "Seasonic FOCUS GX-750",
+    "price": 119.99,
+    "wattage": 750,
+    "efficiency_rating": "80+ Gold",
+    "form_factor": "ATX",
+    "modular": "Full"
+  },
+  {
+    "name": "Thermaltake Toughpower GF1 PE 850W",
+    "price": 109.99,
+    "wattage": 850,
+    "efficiency_rating": "80+ Gold",
+    "form_factor": "ATX",
+    "modular": "Full"
+  },
+  {
+    "name": "MSI MAG A650BN",
+    "price": 59.99,
+    "wattage": 650,
+    "efficiency_rating": "80+ Bronze",
+    "form_factor": "ATX",
+    "modular": "None"
+  }
+]

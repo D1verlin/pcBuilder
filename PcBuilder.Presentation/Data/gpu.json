@@ -1,0 +1,58 @@
+[
+  {
+    "name": "NVIDIA GeForce RTX 4090",
+    "price": 1599.99,
+    "memory": 24,
+    "core_clock": 2.23,
+    "boost_clock": 2.52,
+    "tdp": 450
+  },
+  {
+    "name": "NVIDIA GeForce RTX 4080 SUPER",
+    "price": 999.99,
+    "memory": 16,
+    "core_clock": 2.29,
+    "boost_clock": 2.55,
+    "tdp": 320
+  },
+  {
+    "name": "NVIDIA GeForce RTX 4070 SUPER",
+    "price": 599.99,
+    "memory": 12,
+    "core_clock": 1.98,
+    "boost_clock": 2.47,
+    "tdp": 220
+  },
+  {
+    "name": "NVIDIA GeForce RTX 4060",
+    "price": 299.99,
+    "memory": 8,
+    "core_clock": 1.83,
+    "boost_clock": 2.46,
+    "tdp": 115
+  },
+  {
+    "name": "AMD Radeon RX 7900 XTX",
+    "price": 999.99,
+    "memory": 24,
+    "core_clock": 2.30,
+    "boost_clock": 2.50,
+    "tdp": 355
+  },
+  {
+    "name": "AMD Radeon RX 7800 XT",
+    "price": 499.99,
+    "memory": 16,
+    "core_clock": 2.12,
+    "boost_clock": 2.43,
+    "tdp": 263
+  },
+  {
+    "name": "AMD Radeon RX 7600",
+    "price": 269.99,
+    "memory": 8,
+    "core_clock": 2.25,
+    "boost_clock": 2.65,
+    "tdp": 165
+  }
+]

@@ -1,0 +1,51 @@
+[
+  {
+    "name": "Samsung 990 PRO 2 TB",
+    "price": 169.99,
+    "capacity": 2000,
+    "type": "NVMe PCIe 4.0",
+    "form_factor": "M.2-2280"
+  },
+  {
+    "name": "Samsung 980 PRO 1 TB",
+    "price": 89.99,
+    "capacity": 1000,
+    "type": "NVMe PCIe 4.0",
+    "form_factor": "M.2-2280"
+  },
+  {
+    "name": "WD Black SN850X 2 TB",
+    "price": 154.99,
+    "capacity": 2000,
+    "type": "NVMe PCIe 4.0",
+    "form_factor": "M.2-2280"
+  },
+  {
+    "name": "Crucial P3 Plus 1 TB",
+    "price": 64.99,
+    "capacity": 1000,
+    "type": "NVMe PCIe 4.0",
+    "form_factor": "M.2-2280"
+  },
+  {
+    "name": "Kingston NV2 2 TB",
+    "price": 119.99,
+    "capacity": 2000,
+    "type": "NVMe PCIe 4.0",
+    "form_factor": "M.2-2280"
+  },
+  {
+    "name": "Samsung 870 EVO 1 TB",
+    "price": 84.99,
+    "capacity": 1000,
+    "type": "SATA SSD",
+    "form_factor": "2.5\""
+  },
+  {
+    "name": "Seagate Barracuda Compute 2 TB",
+    "price": 54.99,
+    "capacity": 2000,
+    "type": "HDD 7200RPM",
+    "form_factor": "3.5\""
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Corsair Dominator Platinum RGB 32GB (2 x 16GB)",
+    "price": 179.99,
+    "memory_type": "DDR5",
+    "speed": [6000, 0],
+    "modules": [2, 16],
+    "cas_latency": 30
+  },
+  {
+    "name": "G.Skill Trident Z5 NEO RGB 64GB (2 x 32GB)",
+    "price": 239.99,
+    "memory_type": "DDR5",
+    "speed": [6000, 0],
+    "modules": [2, 32],
+    "cas_latency": 30
+  },
+  {
+    "name": "TEAMGROUP T-Force Delta RGB 32GB (2 x 16GB)",
+    "price": 109.99,
+    "memory_type": "DDR5",
+    "speed": [6000, 0],
+    "modules": [2, 16],
+    "cas_latency": 38
+  },
+  {
+    "name": "Crucial Pro 32GB (2 x 16GB)",
+    "price": 89.99,
+    "memory_type": "DDR5",
+    "speed": [5600, 0],
+    "modules": [2, 16],
+    "cas_latency": 46
+  },
+  {
+    "name": "Corsair Vengeance LPX 32GB (2 x 16GB)",
+    "price": 74.99,
+    "memory_type": "DDR4",
+    "speed": [3600, 0],
+    "modules": [2, 16],
+    "cas_latency": 18
+  },
+  {
+    "name": "G.Skill Ripjaws V 16GB (2 x 8GB)",
+    "price": 39.99,
+    "memory_type": "DDR4",
+    "speed": [3200, 0],
+    "modules": [2, 8],
+    "cas_latency": 16
+  },
+  {
+    "name": "TEAMGROUP T-Force Vulcan Z 32GB (2 x 16GB)",
+    "price": 59.99,
+    "memory_type": "DDR4",
+    "speed": [3200, 0],
+    "modules": [2, 16],
+    "cas_latency": 16
+  }
+]

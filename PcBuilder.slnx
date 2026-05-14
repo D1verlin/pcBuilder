@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="PcBuilder.Domain/PcBuilder.Domain.csproj" />
+  <Project Path="PcBuilder.Application/PcBuilder.Application.csproj" />
+  <Project Path="PcBuilder.Infrastructure/PcBuilder.Infrastructure.csproj" />
+  <Project Path="PcBuilder.Presentation/PcBuilder.Presentation.csproj" />
+</Solution>

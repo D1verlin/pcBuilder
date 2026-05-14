@@ -1,0 +1,101 @@
+[
+  {
+    "name": "Intel Core i9-14900K",
+    "price": 589.99,
+    "core_count": 24,
+    "core_clock": 3.2,
+    "boost_clock": 6.0,
+    "microarchitecture": "Raptor Lake",
+    "socket": "LGA1700",
+    "tdp": 125,
+    "graphics": "Intel UHD Graphics 770"
+  },
+  {
+    "name": "Intel Core i7-14700K",
+    "price": 409.99,
+    "core_count": 20,
+    "core_clock": 3.4,
+    "boost_clock": 5.6,
+    "microarchitecture": "Raptor Lake",
+    "socket": "LGA1700",
+    "tdp": 125,
+    "graphics": "Intel UHD Graphics 770"
+  },
+  {
+    "name": "Intel Core i5-13600K",
+    "price": 299.99,
+    "core_count": 14,
+    "core_clock": 3.5,
+    "boost_clock": 5.1,
+    "microarchitecture": "Raptor Lake",
+    "socket": "LGA1700",
+    "tdp": 125,
+    "graphics": "Intel UHD Graphics 770"
+  },
+  {
+    "name": "Intel Core i3-12100F",
+    "price": 99.99,
+    "core_count": 4,
+    "core_clock": 3.3,
+    "boost_clock": 4.3,
+    "microarchitecture": "Alder Lake",
+    "socket": "LGA1700",
+    "tdp": 58,
+    "graphics": null
+  },
+  {
+    "name": "AMD Ryzen 9 7950X3D",
+    "price": 649.99,
+    "core_count": 16,
+    "core_clock": 4.2,
+    "boost_clock": 5.7,
+    "microarchitecture": "Zen 4",
+    "socket": "AM5",
+    "tdp": 120,
+    "graphics": "Radeon Graphics"
+  },
+  {
+    "name": "AMD Ryzen 7 7800X3D",
+    "price": 399.99,
+    "core_count": 8,
+    "core_clock": 4.2,
+    "boost_clock": 5.0,
+    "microarchitecture": "Zen 4",
+    "socket": "AM5",
+    "tdp": 120,
+    "graphics": "Radeon Graphics"
+  },
+  {
+    "name": "AMD Ryzen 5 7600X",
+    "price": 249.99,
+    "core_count": 6,
+    "core_clock": 4.7,
+    "boost_clock": 5.3,
+    "microarchitecture": "Zen 4",
+    "socket": "AM5",
+    "tdp": 105,
+    "graphics": "Radeon Graphics"
+  },
+  {
+    "name": "AMD Ryzen 7 5800X3D",
+    "price": 329.99,
+    "core_count": 8,
+    "core_clock": 3.4,
+    "boost_clock": 4.5,
+    "microarchitecture": "Zen 3",
+    "socket": "AM4",
+    "tdp": 105,
+    "graphics": null
+  },
+  {
+    "name": "AMD Ryzen 5 5600X",
+    "price": 159.99,
+    "core_count": 6,
+    "core_clock": 3.7,
+    "boost_clock": 4.6,
+    "microarchitecture": "Zen 3",
+    "socket": "AM4",
+    "tdp": 65,
+    "graphics": null
+  }
+]

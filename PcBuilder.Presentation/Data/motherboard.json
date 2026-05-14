@@ -1,0 +1,74 @@
+[
+  {
+    "name": "ASUS ROG MAXIMUS Z790 HERO",
+    "price": 629.99,
+    "socket": "LGA1700",
+    "form_factor": "ATX",
+    "memory_type": "DDR5",
+    "memory_slots": 4,
+    "max_memory": 192
+  },
+  {
+    "name": "MSI MAG B760 TOMAHAWK WIFI",
+    "price": 199.99,
+    "socket": "LGA1700",
+    "form_factor": "ATX",
+    "memory_type": "DDR5",
+    "memory_slots": 4,
+    "max_memory": 192
+  },
+  {
+    "name": "Gigabyte B760M DS3H AX",
+    "price": 129.99,
+    "socket": "LGA1700",
+    "form_factor": "Micro ATX",
+    "memory_type": "DDR4",
+    "memory_slots": 4,
+    "max_memory": 128
+  },
+  {
+    "name": "ASUS ROG CROSSHAIR X670E HERO",
+    "price": 699.99,
+    "socket": "AM5",
+    "form_factor": "ATX",
+    "memory_type": "DDR5",
+    "memory_slots": 4,
+    "max_memory": 192
+  },
+  {
+    "name": "Gigabyte B650 AORUS ELITE AX",
+    "price": 219.99,
+    "socket": "AM5",
+    "form_factor": "ATX",
+    "memory_type": "DDR5",
+    "memory_slots": 4,
+    "max_memory": 192
+  },
+  {
+    "name": "ASRock B650M Pro RS WiFi",
+    "price": 149.99,
+    "socket": "AM5",
+    "form_factor": "Micro ATX",
+    "memory_type": "DDR5",
+    "memory_slots": 4,
+    "max_memory": 192
+  },
+  {
+    "name": "MSI MPG B550 GAMING PLUS",
+    "price": 139.99,
+    "socket": "AM4",
+    "form_factor": "ATX",
+    "memory_type": "DDR4",
+    "memory_slots": 4,
+    "max_memory": 128
+  },
+  {
+    "name": "ASUS TUF GAMING B550-PLUS WIFI II",
+    "price": 159.99,
+    "socket": "AM4",
+    "form_factor": "ATX",
+    "memory_type": "DDR4",
+    "memory_slots": 4,
+    "max_memory": 128
+  }
+]
