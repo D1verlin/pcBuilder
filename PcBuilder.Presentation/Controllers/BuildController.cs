@@ -28,5 +28,20 @@ namespace PcBuilder.Presentation.Controllers
             var benchmarks = await _buildService.GetBuildBenchmarksAsync(request);
             return Ok(benchmarks);
         }
+
+        [HttpPost("save")]
+        public async Task<IActionResult> SaveBuild([FromBody] SaveBuildRequestDto request)
+        {
+            var result = await _buildService.SaveBuildAsync(request);
+            return Ok(result);
+        }
+
+        [HttpGet("share/{shareCode}")]
+        public async Task<IActionResult> GetByShareCode(string shareCode)
+        {
+            var result = await _buildService.GetBuildByShareCodeAsync(shareCode);
+            if (result == null) return NotFound();
+            return Ok(result);
+        }
     }
 }

@@ -10,13 +10,16 @@ namespace PcBuilder.Application.Services
     {
         private readonly IPcComponentRepository _componentRepository;
         private readonly IBenchmarkRepository _benchmarkRepository;
+        private readonly IBuildRepository _buildRepository;
 
         public BuildService(
             IPcComponentRepository componentRepository,
-            IBenchmarkRepository benchmarkRepository)
+            IBenchmarkRepository benchmarkRepository,
+            IBuildRepository buildRepository)
         {
             _componentRepository = componentRepository;
             _benchmarkRepository = benchmarkRepository;
+            _buildRepository = buildRepository;
         }
 
         public async Task<CompatibilityResultDto> ValidateCompatibilityAsync(BuildRequestDto request)
@@ -57,6 +60,86 @@ namespace PcBuilder.Application.Services
                 Score = b.Score,
                 Unit = b.Unit
             }).ToList();
+        }
+
+        public async Task<SaveBuildResponseDto> SaveBuildAsync(SaveBuildRequestDto request)
+        {
+            var cpu        = await FindComponentAsync(request.CpuId);
+            var motherboard = await FindComponentAsync(request.MotherboardId);
+            var ram        = await FindComponentAsync(request.RamId);
+            var gpu        = await FindComponentAsync(request.GpuId);
+            var storage    = await FindComponentAsync(request.StorageId);
+            var psu        = await FindComponentAsync(request.PsuId);
+
+            var build = new Domain.Entities.Build
+            {
+                Name            = request.Name,
+                ShareCode       = GenerateShareCode(),
+                CpuId           = request.CpuId,
+                MotherboardId   = request.MotherboardId,
+                RamId           = request.RamId,
+                GpuId           = request.GpuId,
+                StorageId       = request.StorageId,
+                PsuId           = request.PsuId,
+                TotalPrice      = (cpu?.Price ?? 0) + (motherboard?.Price ?? 0) + (ram?.Price ?? 0)
+                                + (gpu?.Price ?? 0) + (storage?.Price ?? 0) + (psu?.Price ?? 0),
+                EstimatedWattage = CalculateTotalTdp(cpu, motherboard, gpu, storage, ram)
+            };
+
+            var saved = await _buildRepository.AddAsync(build);
+
+            return new SaveBuildResponseDto
+            {
+                Id        = saved.Id,
+                ShareCode = saved.ShareCode,
+                Name      = saved.Name
+            };
+        }
+
+        public async Task<BuildDetailDto?> GetBuildByShareCodeAsync(string shareCode)
+        {
+            var build = await _buildRepository.GetByShareCodeAsync(shareCode);
+            if (build == null) return null;
+
+            return new BuildDetailDto
+            {
+                Id               = build.Id,
+                Name             = build.Name,
+                ShareCode        = build.ShareCode,
+                TotalPrice       = build.TotalPrice,
+                EstimatedWattage = build.EstimatedWattage,
+                Cpu              = MapComponent(build.Cpu),
+                Motherboard      = MapComponent(build.Motherboard),
+                Ram              = MapComponent(build.Ram),
+                Gpu              = MapComponent(build.Gpu),
+                Storage          = MapComponent(build.Storage),
+                Psu              = MapComponent(build.Psu)
+            };
+        }
+
+        private static BuildComponentDto? MapComponent(Domain.Entities.PcComponent? comp)
+        {
+            if (comp == null) return null;
+            return new BuildComponentDto
+            {
+                Id           = comp.Id,
+                Name         = comp.Name,
+                CategoryName = comp.CategoryName ?? string.Empty,
+                Price        = comp.Price,
+                Tdp          = comp.Tdp,
+                Socket       = comp.Socket ?? string.Empty,
+                FormFactor   = comp.FormFactor ?? string.Empty,
+                MemoryType   = comp.MemoryType ?? string.Empty,
+                Brand        = comp.Brand ?? string.Empty,
+                SpecsJson    = comp.SpecsJson ?? string.Empty
+            };
+        }
+
+        private static string GenerateShareCode()
+        {
+            const string chars = "ABCDEFGHJKLMNPQRSTUVWXYZabcdefghjkmnpqrstuvwxyz23456789";
+            var random = new Random();
+            return new string(Enumerable.Range(0, 8).Select(_ => chars[random.Next(chars.Length)]).ToArray());
         }
 
         private async Task<PcComponent?> FindComponentAsync(int? id)

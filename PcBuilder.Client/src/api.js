@@ -13,6 +13,8 @@ export const getComponents = (params) => {
 export const validateBuild = (build) => axios.post(`${API_URL}/build/validate`, build);
 export const getBenchmarks = (build) => axios.post(`${API_URL}/build/benchmarks`, build);
 export const getScenarios = () => axios.get(`${API_URL}/components/scenarios`);
+export const saveBuild = (build) => axios.post(`${API_URL}/build/save`, build);
+export const getBuildByShareCode = (code) => axios.get(`${API_URL}/build/share/${code}`);
 
 // --- Admin API ---
 const authHeaders = () => {
